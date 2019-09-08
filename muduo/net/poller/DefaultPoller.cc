@@ -18,10 +18,12 @@ Poller* Poller::newDefaultPoller(EventLoop* loop)
 {
   if (::getenv("MUDUO_USE_POLL"))
   {
+    printf("PollPoller\n");
     return new PollPoller(loop);
   }
   else
   {
+    printf("EpollPoller\n");
     return new EPollPoller(loop);
   }
 }
