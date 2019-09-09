@@ -21,6 +21,7 @@ cc_library(
     ],
     deps = [
         "#pthread",
+        "#rt",
     ],
     optimize = ["-std=c++11", "-g", "-O2", "-Wall", "-Wextra",],
 )
