@@ -1,0 +1,6 @@
+
+
+blade-bin/examples/sudoku/sudoku_solver_multiloop 20
+
+blade-bin/examples/sudoku/sudoku_loadtest examples/sudoku/input.txt localhost 1000 1000
+
